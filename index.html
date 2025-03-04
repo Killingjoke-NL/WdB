@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willem de Bruin - AI & Code Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigatie -->
+    <header class="header">
+        <div class="logo">Willem de Bruin</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projecten</a>
+            <a href="about.html">Over Mij</a>
+            <a href="teachers.html">Gastdocenten</a>
+        </nav>
+    </header>
+
+    <!-- Introductie -->
+    <section class="intro">
+        <h1>Welkom op mijn AI & Code Playground</h1>
+        <p>Hier experimenteer ik met AI, technologie en programmeren.</p>
+        <div class="animated-box"></div>
+    </section>
+
+    <!-- Project Carousel -->
+    <section class="projects">
+        <h2>Projecten</h2>
+        <div class="carousel">
+            <button class="prev" onclick="scrollProjects(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="project-card">
+                    <a href="teachers.html" class="project-link">
+                        <img src="project1.jpg" alt="AI Coaches">
+                        <h3>AI Coaches</h3>
+                        <p>Ontdek onze AI-gestuurde coaches die je helpen met programmeren.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Automatische Rekentools</h3>
+                    <p>AI-gestuurde rekentools voor snelle analyses.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Interactieve Data Visualisatie</h3>
+                    <p>Een dynamische weergave van complexe data.</p>
+                </div>
+            </div>
+            <button class="next" onclick="scrollProjects(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
